@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <marquee behavior="scroll" direction="" scrolldelay="100"><h2>Calculator Using JavaScript</h2></marquee>
+        <div class="input-field">
+            <input type="text" id="screen">
+        </div>
+        <table>
+            <tr>
+                <td onclick="clearScreen()">CE</td>
+                <td class="button">+/-</td>
+                <td class="button">%</td>
+                <td onclick="screenOn()" style="background-color: blue;">AC</td>
+            </tr>
+            <tr>
+                <td class="button">7</td>
+                <td class="button">8</td>
+                <td class="button">9</td>
+                <td class="button">/</td>
+            </tr>
+            <tr>
+                <td class="button">4</td>
+                <td class="button">5</td>
+                <td class="button">6</td>
+                <td class="button">*</td>
+            </tr>
+            <tr>
+                <td class="button">1</td>
+                <td class="button">2</td>
+                <td class="button">3</td>
+                <td class="button">-</td>
+            </tr>
+            <tr>
+                <td class="button">0</td>
+                <td class="button">.</td>
+                <td onclick="evaluate_expression()">=</td>
+                <td class="button">+</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
